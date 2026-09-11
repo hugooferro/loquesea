@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bar Restaurante Mesón Parry en C. Cazorla, 10, Pinos Puente, Granada. Cocina española, desayunos, almuerzos, cenas, terraza y comida para llevar.">
+  <meta name="keywords" content="Bar Restaurante Mesón Parry, restaurante en Pinos Puente, comer en Pinos Puente, bar restaurante Pinos Puente, restaurante Granada, Mesón Parry Pinos Puente">
+  <meta name="theme-color" content="#183d3d">
+  <title>Bar Restaurante Mesón Parry | Pinos Puente, Granada</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Bar Restaurante Mesón Parry",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "C. Cazorla, 10",
+      "postalCode": "18240",
+      "addressLocality": "Pinos Puente",
+      "addressRegion": "Granada",
+      "addressCountry": "ES"
+    },
+    "telephone": "+34607730571",
+    "servesCuisine": "Cocina española",
+    "priceRange": "€€",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "bestRating": "5"
+    }
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #1d2d2c;
+      --deep: #183d3d;
+      --green: #275858;
+      --cream: #f8f4ec;
+      --paper: #fffdf8;
+      --gold: #d79244;
+      --coral: #c7634b;
+      --muted: #64716d;
+      --line: #e8e1d5;
+      --shadow: 0 18px 55px rgba(29, 45, 44, .11);
+      --radius: 18px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: var(--paper); font-family: 'DM Sans', sans-serif; line-height: 1.6; }
+    img { display: block; width: 100%; object-fit: cover; }
+    a { color: inherit; text-decoration: none; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    .container { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+    .eyebrow { color: var(--coral); font-size: .75rem; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; line-height: 1.08; margin: 0; }
+    h2 { font-size: clamp(2.2rem, 5vw, 4rem); letter-spacing: -.03em; }
+    .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 42px; }
+    .section-heading p { max-width: 360px; color: var(--muted); margin: 0; }
+    .btn { align-items: center; border: 0; border-radius: 999px; cursor: pointer; display: inline-flex; font: 600 .9rem 'DM Sans', sans-serif; gap: 10px; justify-content: center; min-height: 50px; padding: 0 23px; transition: transform .2s ease, box-shadow .2s ease, background .2s ease; }
+    .btn:hover { transform: translateY(-2px); }
+    .btn:focus-visible, a:focus-visible, button:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+    .btn-primary { background: var(--gold); color: #25180d; box-shadow: 0 8px 22px rgba(215, 146, 68, .25); }
+    .btn-primary:hover { background: #e4a255; box-shadow: 0 12px 26px rgba(215, 146, 68, .32); }
+    .btn-light { background: rgba(255,255,255,.12); color: white; border: 1px solid rgba(255,255,255,.38); }
+    .btn-light:hover { background: rgba(255,255,255,.2); }
+
+    .site-header { background: var(--deep); color: white; position: absolute; top: 0; width: 100%; z-index: 10; }
+    .nav { align-items: center; display: flex; height: 78px; justify-content: space-between; }
+    .brand { align-items: center; display: flex; font-family: 'Playfair Display', serif; font-size: 1.2rem; gap: 10px; }
+    .brand-mark { align-items: center; border: 1px solid var(--gold); border-radius: 50%; color: var(--gold); display: flex; font-size: .75rem; height: 33px; justify-content: center; width: 33px; }
+    .nav-links { align-items: center; display: flex; gap: 27px; font-size: .84rem; }
+    .nav-links a { color: rgba(255,255,255,.78); transition: color .2s; }
+    .nav-links a:hover { color: var(--gold); }
+    .menu-toggle { background: transparent; border: 0; color: white; cursor: pointer; display: none; font-size: 1.5rem; padding: 7px; }
+
+    .hero { background: var(--deep); color: white; min-height: 690px; overflow: hidden; padding: 166px 0 78px; position: relative; }
+    .hero::after { background: url('fachada-parry.jpg') center/cover; content: ''; inset: 0 0 0 52%; opacity: .72; position: absolute; }
+    .hero::before { background: linear-gradient(90deg, var(--deep) 35%, rgba(24,61,61,.85) 56%, rgba(24,61,61,.12)); content: ''; inset: 0; position: absolute; z-index: 1; }
+    .hero-content { position: relative; z-index: 2; }
+    .hero h1 { font-size: clamp(3.2rem, 7vw, 6.5rem); max-width: 690px; margin: 18px 0 24px; letter-spacing: -.045em; }
+    .hero-copy { color: rgba(255,255,255,.75); font-size: 1.15rem; max-width: 430px; margin: 0 0 34px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .hero-note { align-items: center; color: rgba(255,255,255,.58); display: flex; font-size: .76rem; gap: 9px; margin-top: 62px; }
+    .hero-note span { background: var(--gold); border-radius: 50%; height: 7px; width: 7px; }
+
+    section { padding: 104px 0; }
+    .about { background: var(--cream); }
+    .about-grid { align-items: center; display: grid; gap: clamp(40px, 7vw, 100px); grid-template-columns: .9fr 1.1fr; }
+    .about-image { border-radius: var(--radius); height: 510px; object-position: center; box-shadow: var(--shadow); }
+    .about-copy h2 { margin: 14px 0 21px; }
+    .about-copy p { color: var(--muted); max-width: 520px; }
+    .about-signature { border-top: 1px solid var(--line); color: var(--deep); font-family: 'Playfair Display', serif; font-size: 1.4rem; margin-top: 32px; padding-top: 18px; }
+
+    .categories { display: grid; gap: 14px; grid-template-columns: repeat(2, 1fr); }
+    .category { background: var(--cream); border: 1px solid var(--line); border-radius: 12px; min-height: 165px; padding: 23px; position: relative; transition: background .2s, transform .2s; }
+    .category:hover { background: #f3eadb; transform: translateY(-4px); }
+    .category-number { color: var(--gold); font-size: .74rem; font-weight: 700; }
+    .category h3 { font-size: 1.45rem; margin-top: 26px; }
+    .category p { color: var(--muted); font-size: .82rem; margin: 5px 0 0; }
+    .category-list { color: var(--muted); font-size: .88rem; list-style: none; margin: 18px 0 0; padding: 0; }
+    .category-list li { border-top: 1px solid var(--line); padding: 8px 0; }
+    .menu-note { color: var(--muted); font-size: .8rem; margin: 26px 0 0; }
+    .menu-link { color: var(--coral); display: inline-block; font-weight: 700; margin-top: 32px; }
+
+    .gallery { background: var(--deep); color: white; }
+    .gallery .section-heading p { color: rgba(255,255,255,.62); }
+    .gallery-grid { display: grid; gap: 14px; grid-template-columns: 1.1fr .8fr .8fr .8fr; grid-template-rows: 220px 220px; }
+    .gallery-item { border-radius: 12px; overflow: hidden; position: relative; }
+    .gallery-item:first-child { grid-row: span 2; }
+    .gallery-item img { height: 100%; transition: transform .5s ease; }
+    .gallery-item:hover img { transform: scale(1.05); }
+    .gallery-item::after { background: linear-gradient(transparent, rgba(0,0,0,.35)); content: ''; inset: 0; position: absolute; }
+
+    .reviews { background: var(--cream); }
+    .review-grid { display: grid; gap: 18px; grid-template-columns: .8fr 1.2fr; }
+    .rating-card { align-items: center; background: var(--deep); border-radius: var(--radius); color: white; display: flex; flex-direction: column; justify-content: center; min-height: 220px; padding: 28px; text-align: center; }
+    .rating-value { font-family: 'Playfair Display', serif; font-size: 3.8rem; line-height: 1; }
+    .rating-card .stars { font-size: 1.2rem; margin: 17px 0 4px; }
+    .rating-label { color: rgba(255,255,255,.7); font-size: .85rem; }
+    .review-link { align-self: center; background: var(--gold); color: #25180d; }
+    .review { background: var(--paper); border-radius: var(--radius); box-shadow: 0 8px 25px rgba(29,45,44,.04); padding: 29px; }
+    .stars { color: var(--gold); letter-spacing: 3px; }
+    .review p { font-family: 'Playfair Display', serif; font-size: 1.17rem; margin: 24px 0; }
+    .review cite { color: var(--muted); font-size: .8rem; font-style: normal; }
+
+    .contact-grid { display: grid; gap: 70px; grid-template-columns: .7fr 1.3fr; }
+    .contact h2 { margin: 14px 0 30px; }
+    .contact-list { border-top: 1px solid var(--line); margin-top: 32px; }
+    .contact-row { align-items: start; border-bottom: 1px solid var(--line); display: flex; gap: 18px; padding: 20px 0; }
+    .contact-icon { color: var(--coral); font-size: 1.1rem; width: 23px; }
+    .contact-row strong { display: block; font-size: .8rem; letter-spacing: .05em; text-transform: uppercase; }
+    .contact-row span { color: var(--muted); display: block; font-size: .9rem; }
+    .contact-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+    .map { background: #e9e3d6; border-radius: var(--radius); min-height: 445px; overflow: hidden; position: relative; }
+    .map iframe { border: 0; filter: saturate(.7); height: 100%; min-height: 445px; width: 100%; }
+    .map-label { background: var(--paper); border-radius: 10px; box-shadow: var(--shadow); left: 22px; padding: 15px 18px; position: absolute; top: 22px; z-index: 1; }
+    .map-label strong { display: block; font-family: 'Playfair Display', serif; }
+    .map-label span { color: var(--muted); font-size: .75rem; }
+
+    .reservation { background: var(--coral); color: white; padding: 75px 0; }
+    .reservation-inner { align-items: center; display: flex; justify-content: space-between; gap: 30px; }
+    .reservation h2 { font-size: clamp(2.3rem, 5vw, 4.4rem); }
+    .reservation p { color: rgba(255,255,255,.77); margin: 8px 0 0; }
+    .reservation .btn { background: white; color: var(--coral); }
+    footer { background: #122e2e; color: rgba(255,255,255,.63); font-size: .8rem; padding: 28px 0; }
+    .footer-inner { align-items: center; display: flex; justify-content: space-between; }
+    .footer-brand { color: white; font-family: 'Playfair Display', serif; font-size: 1.05rem; }
+    .whatsapp { align-items: center; background: #25d366; border-radius: 50%; bottom: 22px; box-shadow: 0 8px 24px rgba(0,0,0,.2); color: white; display: flex; font-size: 1.5rem; height: 54px; justify-content: center; position: fixed; right: 22px; transition: transform .2s; width: 54px; z-index: 8; }
+    .whatsapp:hover { transform: scale(1.08); }
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 800px) {
+      .container { width: min(100% - 32px, 620px); }
+      .nav { height: 70px; }
+      .menu-toggle { display: block; }
+      .nav-links { background: var(--deep); border-top: 1px solid rgba(255,255,255,.15); display: none; flex-direction: column; gap: 0; left: 0; padding: 10px 16px 18px; position: absolute; top: 70px; width: 100%; }
+      .nav-links.open { display: flex; }
+      .nav-links a { padding: 11px 0; width: 100%; }
+      .hero { min-height: 680px; padding-top: 140px; }
+      .hero::after { inset: 36% 0 0; opacity: .55; }
+      .hero::before { background: linear-gradient(180deg, var(--deep) 25%, rgba(24,61,61,.35) 78%, var(--deep)); }
+      .hero h1 { font-size: clamp(3rem, 14vw, 5rem); }
+      .section-heading { align-items: start; flex-direction: column; gap: 13px; margin-bottom: 28px; }
+      .about-grid, .contact-grid { grid-template-columns: 1fr; }
+      .about-image { height: 330px; order: 2; }
+      .categories { grid-template-columns: repeat(2, 1fr); }
+      .category { min-height: 145px; padding: 18px; }
+      .category h3 { font-size: 1.25rem; margin-top: 20px; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: repeat(4, 180px); }
+      .gallery-item:first-child { grid-column: span 2; grid-row: span 1; }
+      .review-grid { grid-template-columns: 1fr; }
+      .review { padding: 24px; }
+      .map, .map iframe { min-height: 340px; }
+      .reservation-inner { align-items: start; flex-direction: column; }
+      .footer-inner { align-items: start; flex-direction: column; gap: 8px; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Bar Restaurante Mesón Parry, inicio"><span class="brand-mark">P</span> Bar Restaurante Mesón Parry</a>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="#inicio">Inicio</a><a href="#carta">Carta</a><a href="#nosotros">Sobre nosotros</a><a href="#galeria">Galería</a><a href="#opiniones">Opiniones</a><a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-content">
+        <span class="eyebrow">Pinos Puente · Granada</span>
+        <h1>Bar Restaurante Mesón Parry</h1>
+        <p class="hero-copy">Tradición, buen producto y ganas de compartir en Pinos Puente.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#carta">Ver carta <span>↗</span></a><a class="btn btn-light" href="https://www.google.com/maps/search/?api=1&query=Bar+Restaurante+Mes%C3%B3n+Parry%2C+C.+Cazorla+10%2C+Pinos+Puente%2C+Granada" target="_blank" rel="noopener">Cómo llegar <span>↗</span></a></div>
+        <div class="hero-note"><span></span> Un rincón para comer bien y sentirse en casa</div>
+      </div>
+    </section>
+
+    <section class="about" id="nosotros">
+      <div class="container about-grid reveal">
+        <img class="about-image" src="terraza-parry.jpg" alt="Terraza de Bar Restaurante Mesón Parry con mesas y sillas">
+        <div class="about-copy"><span class="eyebrow">El placer de lo cercano</span><h2>Una mesa con ganas de compartir.</h2><p>Bar Restaurante Mesón Parry es un restaurante local de ambiente informal y familiar, pensado para disfrutar de cocina española y buenos momentos en Pinos Puente.</p><p>Tapas, raciones, platos para compartir y una terraza para disfrutar de desayunos, almuerzos, cenas, postres y bebidas. También disponemos de comida para llevar.</p><div class="about-signature">Nos vemos en Pinos Puente.</div></div>
+      </div>
+    </section>
+
+    <section id="carta">
+      <div class="container">
+        <div class="section-heading reveal"><div><span class="eyebrow">Para abrir el apetito</span><h2>Nuestra carta</h2></div><p>Una selección de platos asociados a la carta de Bar Restaurante Mesón Parry, sin precios añadidos.</p></div>
+        <div class="categories reveal">
+          <article class="category"><span class="category-number">01</span><h3>Para compartir</h3><ul class="category-list"><li>Croquetas de rabo de toro</li><li>Caracoles</li><li>Torreznos de Soria</li><li>Calamares fritos</li><li>Cazón</li><li>Ancas de rana</li></ul></article>
+          <article class="category"><span class="category-number">02</span><h3>Especialidades</h3><ul class="category-list"><li>Flamenquín cordobés</li><li>Flamenquín cordobés trinchado</li><li>Huevos rotos</li><li>Carne en salsa</li><li>Careta y pollo a la brasa</li></ul></article>
+          <article class="category"><span class="category-number">03</span><h3>Pescados</h3><ul class="category-list"><li>Fritura de pescado</li><li>Fritura individual</li></ul></article>
+          <article class="category"><span class="category-number">04</span><h3>Ensaladas</h3><ul class="category-list"><li>Ensalada César</li></ul></article>
+        </div>
+        <p class="menu-note">Consulta disponibilidad y precios en el establecimiento.</p>
+      </div>
+    </section>
+
+    <section class="gallery" id="galeria">
+      <div class="container"><div class="section-heading reveal"><div><span class="eyebrow">Así se disfruta</span><h2>Un vistazo a la mesa.</h2></div><p>Una muestra de los platos y momentos que puedes disfrutar en Bar Restaurante Mesón Parry.</p></div>
+        <div class="gallery-grid reveal">
+          <figure class="gallery-item"><img src="mesa-1.jpg" loading="lazy" decoding="async" alt="Caracoles en salsa servidos con pan"></figure>
+          <figure class="gallery-item"><img src="mesa-2.jpg" loading="lazy" decoding="async" alt="Arroz acompañado de cerveza y pan"></figure>
+          <figure class="gallery-item"><img src="mesa-3.jpg" loading="lazy" decoding="async" alt="Plato de habas con jamón"></figure>
+          <figure class="gallery-item"><img src="mesa-4.jpg" loading="lazy" decoding="async" alt="Huevos rotos con jamón y patatas"></figure>
+          <figure class="gallery-item"><img src="mesa-5.jpg" loading="lazy" decoding="async" alt="Postres variados con nata y chocolate"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" id="opiniones"><div class="container"><div class="section-heading reveal"><div><span class="eyebrow">Lo que se cuenta</span><h2>Opiniones</h2></div><p>Consulta la experiencia de otros clientes en la ficha de Google del restaurante.</p></div><div class="review-grid reveal"><div class="rating-card"><span class="rating-value">4,9</span><div class="stars" aria-label="Valoración aproximada de 4,9 sobre 5">★★★★★</div><span class="rating-label">Valoración de clientes · sobre 5</span></div><div class="review"><p>Consulta las opiniones de nuestros clientes en Google.</p><a class="btn review-link" href="https://www.google.com/search?q=Bar+Restaurante+Mes%C3%B3n+Parry+Pinos+Puente" target="_blank" rel="noopener">Ver opiniones en Google ↗</a></div></div></div></section>
+
+    <section class="contact" id="contacto"><div class="container contact-grid reveal"><div><span class="eyebrow">Ven a conocernos</span><h2>Tu próxima mesa está en Pinos Puente.</h2><div class="contact-list"><div class="contact-row"><span class="contact-icon">⌖</span><div><strong>Ubicación</strong><span>C. Cazorla, 10<br>18240 Pinos Puente, Granada</span></div></div><div class="contact-row"><span class="contact-icon">◌</span><div><strong>Teléfono</strong><span>+34 607 73 05 71</span></div></div><div class="contact-row"><span class="contact-icon">◷</span><div><strong>Horario</strong><span>Consulta el horario actualizado antes de venir.</span></div></div></div><div class="contact-actions"><a class="btn btn-primary" href="tel:+34607730571">Llamar</a><a class="btn" style="background:var(--cream);color:var(--deep)" href="https://www.google.com/maps/search/?api=1&query=Bar+Restaurante+Mes%C3%B3n+Parry%2C+C.+Cazorla+10%2C+Pinos+Puente%2C+Granada" target="_blank" rel="noopener">Cómo llegar ↗</a></div></div><div class="map"><div class="map-label"><strong>Bar Restaurante Mesón Parry</strong><span>C. Cazorla, 10 · Pinos Puente</span></div><iframe title="Mapa de Bar Restaurante Mesón Parry" loading="lazy" src="https://www.google.com/maps?q=Bar%20Restaurante%20Mes%C3%B3n%20Parry%2C%20C.%20Cazorla%2010%2C%20Pinos%20Puente%2C%20Granada&output=embed"></iframe></div></div></section>
+
+    <section class="reservation"><div class="container reservation-inner"><div><h2>¿Te apetece venir?</h2><p>Prepara el plan. Nosotros dejamos la mesa lista.</p></div><a class="btn" href="tel:+34607730571">Reservar mesa <span>↗</span></a></div></section>
+  </main>
+
+  <footer><div class="container footer-inner"><span class="footer-brand">Bar Restaurante Mesón Parry</span><span>C. Cazorla, 10 · 18240 Pinos Puente · Granada · 607 73 05 71</span></div></footer>
+  <a class="whatsapp" href="https://wa.me/34607730571" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">WA</a>
+  <script>
+    const menuButton = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuButton.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', isOpen);
+      menuButton.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+      menuButton.textContent = isOpen ? '×' : '☰';
+    });
+    navLinks.addEventListener('click', (event) => {
+      if (event.target.matches('a')) {
+        navLinks.classList.remove('open');
+        menuButton.setAttribute('aria-expanded', 'false');
+        menuButton.setAttribute('aria-label', 'Abrir menú');
+        menuButton.textContent = '☰';
+      }
+    });
+    const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    }), { threshold: .12 });
+    document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+  </script>
+</body>
+</html>
